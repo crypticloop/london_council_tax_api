@@ -10,3 +10,12 @@
 
 ### CLI
 * Also a way to do it with CLI, but don't use that that much
+
+## Accessing from code
+* Guide: https://devcenter.heroku.com/articles/config-vars#managing-config-vars
+* Use `os` library `environ` object
+```
+@app.route('/test_secret')
+def return_secret():
+    return os.environ['SECRET_TEST_VAR']
+```
