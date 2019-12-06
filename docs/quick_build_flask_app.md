@@ -24,6 +24,10 @@ def hello():
 $ virtualenv flask_app
 ```
 * Install all required packages inside this
+* To start:
+```
+source flask_app/bin/activate
+```
 * To exit:
 ```
 $ deactivate
